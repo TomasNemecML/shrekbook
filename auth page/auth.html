@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrekbook</title>
 
-    <link rel="stylesheet" href="main page.css">
-
-
-
+    <link rel="stylesheet" href="auth.css">
 </head>
 
 <body>
 
-    <h1>shrekbook</h1>
-
+    <div class="container">
+        <label>Username : </label>
+        <input type="text" placeholder="Enter Username" name="username" id="email" required>
+        <label>Password : </label>
+        <input type="password" placeholder="Enter Password" name="password" id="password" rrequired>
+        <button type="submit" onclick="login()">Login</button>
+    </div>
 
 
 
@@ -23,7 +25,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+ https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
@@ -32,8 +34,7 @@
     <script src="/firebase.js"></script>
 
     <!-- our js code -->
-    <script src="main page.js"></script>
-
+    <script src="auth.js"></script>
 </body>
 
 </html>
