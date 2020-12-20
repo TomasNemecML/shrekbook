@@ -11,7 +11,7 @@ function checkForLogin() {
 
 function logout() {
     firebase.auth().signOut().then(function() {
-        // Sign-out successful.
+        location.replace("/auth page/auth.html")
     }).catch(function(error) {
         // An error happened.
     });

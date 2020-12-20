@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrekbook</title>
 
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 
 <body>
 
     <div class="container">
         <label>Email</label>
-        <input type="text" placeholder="Enter Email" name="username" id="email" class="textfield" required>
+        <input type="text" placeholder="Enter Email" name="email" id="email" class="textfield" required>
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" class="textfield" required>
         <label>Password</label>
         <input type="password" placeholder="Enter Password" name="password" id="password" class="textfield" required>
-        <button type="submit" onclick="login()" class="loginbutton">Login</button>
-        <a href="register.html" class="registerbutton">Create an account</a>
+        <button type="submit" onclick="register()" class="loginbutton">Register</button>
+        <a href="auth.html" class="backbutton">Back to login</a>
     </div>
-
 
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -35,7 +36,7 @@
     <script src="/firebase.js"></script>
 
     <!-- our js code -->
-    <script src="auth.js"></script>
+    <script src="register.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
 .container {
     width: 80vw;
     max-width: 400px;
-    height: 250px;
+    height: 340px;
     background-color: green;
     /* Gradient
     background-image: linear-gradient(to bottom right, #668300, #B0C400);*/
@@ -46,7 +46,7 @@
     font-size: 25px;
 }
 
-.registerbutton {
+.backbutton {
     border: none;
     text-decoration: none;
     color: black;
