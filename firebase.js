@@ -1,5 +1,3 @@
-// TODO: Replace the following with your app's Firebase project configuration
-// For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
 var firebaseConfig = {
     apiKey: "AIzaSyCXI0EsIMS8dssxoj2yvC3BMblrJgzIL3c",
     authDomain: "shrekbook-3ad29.firebaseapp.com",
@@ -11,6 +9,3 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-var db = firebase.firestore();
-var auth = firebase.auth();

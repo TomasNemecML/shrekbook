@@ -1,11 +1,18 @@
-db.collection("test").doc("test").get().then(function(doc) {
+function checkForLogin() {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            console.log("signed in");
+        } else {
+            console.log("signed out");
+            location.replace("/auth page/auth.html");
+        }
+    });
+}
 
-    if (doc.exists) {
-        console.log(doc.data().test);
-    } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-    }
-}).catch(function(error) {
-    console.log("Error getting document:", error);
-});
+function logout() {
+    firebase.auth().signOut().then(function() {
+        // Sign-out successful.
+    }).catch(function(error) {
+        // An error happened.
+    });
+};
